@@ -1,0 +1,72 @@
+body {
+    background-color: beige;
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    box-sizing: border-box;
+    /* 부모요소에서 넘치지 않도록
+    자식요소들이 부모요소 내에서
+    위치할 수 있도록 조정 */
+}
+
+#outer {
+    width: 80%;
+    height: 80vh;
+    border: 3px solid red;
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    /* display: grid; */
+    /* grid-template-rows: .5far 2.5far 2.5far 3.5far 1far; */
+    /* 이거 왜 안될까? */
+    /* grid-template-columns: 4far; */
+}
+
+#outer > div {
+    border: 3px solid blue;
+    width: 100%;
+}
+
+.nav {
+    height: 5%;
+}
+
+.header {
+    height: 25%;
+}
+
+.section1 {
+    height: 25%;
+    padding: 8px;
+}
+
+.section1 > div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+    
+}
+
+.section1 > div .card {
+    border: 3px solid orange;
+    width: 80%;
+    height: 40px;
+
+}
+
+.section2 {
+    height: 35%;
+}
+
+.footer {
+    height: 10%;
+}
